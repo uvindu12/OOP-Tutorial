@@ -9,10 +9,11 @@ public class Director
     private int numberofMovies;
     private Date dob;
 
-    public Director (String name, String surname)
+    public Director (String name, String surname, int numberofMovies)
     {
         this.name = name;
         this.surname = surname;
+        this.numberofMovies = numberofMovies;
     }
     public String getName()
     {
