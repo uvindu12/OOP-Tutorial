@@ -1,19 +1,17 @@
 package com.iit.Tutorial.OOP;
 
-import java.sql.DriverManager;
-
 public class Director
 {
     private String name;
     private String surname;
-    private int numberofMovies;
+    private int numberOfMovies;
     private Date dob;
 
-    public Director (String name, String surname, int numberofMovies)
+    public Director (String name, String surname)
     {
         this.name = name;
         this.surname = surname;
-        this.numberofMovies = numberofMovies;
+        this.numberOfMovies = numberOfMovies;
     }
     public String getName()
     {
@@ -23,9 +21,8 @@ public class Director
     {
         return surname;
     }
-    public int getNumberofMovies()
-    {
-        return numberofMovies;
+    public void setNumberOfMovie(int num) {
+        this.numberOfMovies = num;
     }
     public Date getDob()
     {
@@ -38,6 +35,8 @@ public class Director
     @Override
     public String toString()
     {
-        return "Director [name = " + name + ", surname = " + surname + ", dob = " + dob.getDate() + ", movies director = " + numberofMovies + "]";
+        return "Director [name = " + name + ", surname = " + surname + ", dob = " + dob.getDate() + ", movies director = " + numberOfMovies + "]";
     }
+
+
 }
